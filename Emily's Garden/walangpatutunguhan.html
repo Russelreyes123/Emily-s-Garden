@@ -1,0 +1,212 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+        <title>Herbal Plants | Emily's Garden</title>
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+<style>
+
+
+    body{
+    background-size:cover;
+    background-position: center;
+    padding: 0;
+    margin: 0 auto;
+    font-family: bell mt;
+    text-align: center;
+    color: #fff;
+
+
+    
+}
+#black{
+  color: black
+}
+
+
+#td{
+  background-color: white;
+}
+
+h1{
+    opacity: .8;
+    padding: 30px;
+    margin: 0;
+    font-size: 50px
+    
+    
+}
+
+h4{
+    font-size: 40px;
+}
+
+nav{
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #13d1ae, #0e999c);
+    padding: 10px;
+}
+nav a.active{
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    background-color: #12a186;
+    border-radius: 10px
+}
+
+.navigator{
+  font-family: comic sans ms;
+    
+}
+
+.navigator a{
+    position: relative;
+    font-size: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+
+}
+
+.navigator a:hover{
+    position: relative;
+
+
+}
+
+.navigator > a:before{
+     content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+
+}
+
+.navigator > a:hover:before{
+     visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+    
+footer{
+    position: fixed;
+    bottom: 0;
+    padding:0;
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(#0e9c82, #0e999c);
+    
+}
+
+footer .foot h2{
+    padding: 30px;
+    margin: 0;
+    color: green
+}
+.button {
+  font-size: 1em;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 30px;
+  background-image: linear-gradient(#11bf9f, #14c6c9);
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: all 0.3s ease-out
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: visible;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+
+}
+
+
+
+
+</style>
+<body bgcolor="#e4f0e4">
+    <nav>
+      <div class="navigator">
+        <div class="search-container" style="position: fixed; margin-left: 1250px; background-color: #227d7b; border-bottom-right-radius: 5px">
+          <form action="walangpatutunguhan.html">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="material icons"> Search</i></button>
+          </form>
+        </div>        
+        <a href="home.html"><img src="titleemilysgarden.png"height="48" width="192"></a>
+        <a href="herbal.html" id="black">Herbal</a>
+        <a href="fruitbearing.html" id="black">Fruit Bearing</a>
+        <a href="flower.html" id="black">Flower</a>
+        <a href="gardening.html" id="black">Gardening</a>
+        <a href="tools.html" id="black">Tools</a></td>
+        <a href="cart.html" id="black" style="background-color: #8ce68e; border-radius: 5px">View cart<img src="cart.png" width="18" height="16.6"></a>
+        <a href="wishlist.html" id="black" style="background-color: #8ce68e; border-radius: 5px">View wishlist</a>
+        <a href="about.html" style="color: #096637">About</a>
+     </div>
+         </nav>
+  <table width="1350" height="50" border="0" align="center" style="border-spacing: 5px; background-color: " >
+    <tr>
+      <td colspan="5" height="50" width="1350" id="td"><h2 style="color: #143835; margin-left: 20px; text-align: center;">Sorry, no items matched for this search...</h2></td>
+  </tr>
+  
+</table>
+
+</body>
+</html>

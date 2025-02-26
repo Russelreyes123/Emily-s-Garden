@@ -1,0 +1,396 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+        <title>Herbal Plants | Emily's Garden</title>
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+<style>
+
+
+    body{
+    background-size:cover;
+    background-position: center;
+    padding: 0;
+    margin: 0 auto;
+    font-family: bell mt;
+    text-align: center;
+    color: #fff;
+
+
+    
+}
+
+
+#price{
+  color: #ba8522
+}
+#black{
+  color: black
+}
+
+
+#td{
+  background-color: white;
+}
+
+h1{
+    opacity: .8;
+    padding: 30px;
+    margin: 0;
+    font-size: 50px
+    
+    
+}
+
+h4{
+    font-size: 40px;
+}
+
+nav{
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #13d1ae, #0e999c);
+    padding: 10px;
+}
+nav a.active{
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    background-color: #12a186;
+    border-radius: 10px
+}
+
+.navigator{
+  font-family: comic sans ms;
+    
+}
+
+.navigator a{
+    position: relative;
+    font-size: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+
+}
+
+.navigator a:hover{
+    position: relative;
+
+
+}
+
+.navigator > a:before{
+     content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+
+}
+
+.navigator > a:hover:before{
+     visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+    
+footer{
+    position: fixed;
+    bottom: 0;
+    padding:0;
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(#0e9c82, #0e999c);
+    
+}
+
+footer .foot h2{
+    padding: 30px;
+    margin: 0;
+    color: green
+}
+.button {
+  font-size: 1em;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 150ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 30px;
+  background-image: linear-gradient(#11bf9f, #14c6c9);
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: all 0.3s ease-out
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: visible;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+
+}
+
+
+
+
+</style>
+<body bgcolor="#f2f2f2">
+    <nav>
+        <div class="search-container" style="position: fixed; margin-left: 1250px;">
+          <form action="walangpatutunguhan.html">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="material icons"> Search</i></button>
+          </form>
+        </div>
+
+    <div class="navigator">
+
+        <a href="home.html"><img src="titleemilysgarden.png"height="48" width="192"></a>
+        <a href="herbal.html" class="active" id="black">Herbal</a>
+        <a href="fruitbearing.html" id="black">Fruit Bearing</a>
+        <a href="flower.html" id="black">Flower</a>
+        <a href="gardening.html" id="black">Gardening</a>
+        <a href="tools.html" id="black">Tools</a></td>
+
+
+        <a href="cart.html" id="black" style="background-color: #8ce68e; border-radius: 5px">View cart<img src="cart.png" width="18" height="16.6"></a>
+        <a href="wishlist.html" id="black" style="background-color: #8ce68e; border-radius: 5px">View wishlist</a>
+        <a href="about.html" style="color: #096637">About</a>
+     </div>
+         </nav>
+  <table width="1350" height="400" border="0" align="center" style="border-spacing: 5px; background-color: " >
+    <tr>
+      <td colspan="5" height="50" width="1350" id="td"><h2 style="color: #143835; margin-left: 20px;">Herbal Plants</h2></td>
+    </tr>
+    <tr id="td">
+      <td height="250" width="270">
+        <div class="box" style="text-align: center;">
+          <a class="button" href="#popup1"><img src="snakegrass.png" height="250" width="265"><h3 id="black"> Snake Grass;</h3><h3 id="price">₱450.00</h3></a>
+        </div>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="snakegrass.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td> 
+              <td id="black">
+                <h2 >Snake Grass</h2>
+                <p>Scientific name: Equisetum</p>
+                
+                <p>Traditionally it was used as a herb to cure snake bite. It is believe that it able to neutralized the poison from the snake. Recently, it is well known for its healing properties such as cure for cancer.
+                </p>
+                <hr>
+                <h2 style="color: #143835">₱450.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html" style="background-color: #29E185; border-radius: 10px; color: black"> BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+    <td height="250" width="270"><div class="box" style="text-align: center;">
+      <a class="button" href="#popup2"><img src="turmeric.png" height="250" width="265"><h3 id="black">Turmeric</h3><h3 id="price">₱349.00</h3></a>
+      </div>
+
+      <div id="popup2" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="turmeric.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td>
+              <td id="black">
+                <h2 style="color:#143835 ">Turmeric</h2>
+                <p>Scientific name: Curcuma longa</p>
+                
+                <p>Turmeric and especially its most active compound curcumin have many scientifically-proven health benefits, such as the potential to prevent heart disease, Alzheimer's and cancer.</p>
+                <hr>
+                <h2 style="color: #143835">₱349.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html" style="background-color: #29E185; border-radius: 10px; color: black" > BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+    <td height="250" width="270"><div class="box" style="text-align: center;">
+      <a class="button" href="#popup3"><img src="oregano.png" height="250" width="265"><h3 id="black"> Oregano</h3><h3 id="price">₱109.00</h3></a>
+      </div>
+
+      <div id="popup3" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="Oregano.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td>
+              <td  id="black">
+                <h2 style="color:#143835 ">Oregano</h2>
+                <p>Scientific name: Origanum vulgare</p>
+                
+                <p>Possible medicinal uses of oregano include treating respiratory tract disorders, gastrointestinal (GI) disorders, menstrual cramps, and urinary tract disorders.</p>
+                <hr>
+                <h2 style="color: #143835">₱109.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html" style="background-color: #29E185; border-radius: 10px; color: black" > BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+    <td height="250" width="270"><div class="box" style="text-align: center;">
+      <a class="button" href="#popup4"><img src="blackmulberry.png" height="250" width="265"> <h3 id="black">Black Mulberry</h3><h3 id="price">₱505.00</h3></a>
+      </div>
+
+      <div id="popup4" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="blackmulberry.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td>
+              <td id="black">
+                <h2 style="color:#143835 ">Black Mulberry</h2>
+                <p>Scientific name: Morus nigra</p>
+                
+                <p>Mulberries are colorful berries that are eaten both fresh and dried. They're a good source of iron, vitamin C, and several plant compounds and have been linked to lower cholesterol, blood sugar, and cancer risk.</p>
+                <hr>
+                <h2 style="color: #143835">₱505.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html" style="background-color: #29E185; border-radius: 10px; color: black" > BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr id="td">
+    <td height="250" width="270" ><div class="box" style="text-align: center;">
+      <a class="button" href="#popup5"><img src="lagundi.png" height="250" width="265"></style><h3 id="black"> Lagundi</h3><h3 id="price">₱250.00</h3></a>
+      </div>
+
+      <div id="popup5" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="lagundi.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td>
+              <td id="black">
+                <h2 style="color:#143835 ">Lagundi</h2>
+                <p>Scientific name: Vitex negundo</p>
+                
+                <p>Among the medicinal uses of lagundi are to stop coughing, relieve asthma, facilitate the discharge of phlegm and to lower fever due to colds or flu. It is also a pain reliever for headache and toothache.</p>
+                <hr>
+                <h2 style="color: #143835">₱250.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html" style="background-color: #29E185; border-radius: 10px; color: black" > BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

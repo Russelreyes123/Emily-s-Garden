@@ -1,0 +1,11 @@
+body {
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Emilysgardenoyokuso.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0 auto;
+    font-family: bell mt;
+    text-align: center;
+    color: #fff;
+}
+	

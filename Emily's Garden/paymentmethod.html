@@ -1,0 +1,211 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+        <title>Select Payment Method | Emily's Garden</title>
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+<style>
+
+
+    body{
+      background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(emilysgardenbackground.png);
+    background-size:cover;
+    background-position: top;
+    padding: 0;
+    margin: 0 auto;
+    font-family: bell mt;
+    text-align: center;
+    color: #fff;
+
+
+    
+}
+#black{
+  color: black
+}
+
+
+#td{
+  background-color: white;
+}
+
+h1{
+    opacity: .8;
+    padding: 30px;
+    margin: 0;
+    font-size: 50px
+    
+    
+}
+
+h4{
+    font-size: 40px;
+}
+
+nav{
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #13d1ae, #0e999c);
+    padding: 10px;
+}
+nav a.active{
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    background-color: #12a186;
+    border-radius: 10px
+}
+
+.navigator{
+  font-family: 
+    
+}
+
+.navigator a{
+    position: relative;
+    font-size: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+
+}
+
+.navigator a:hover{
+    position: relative;
+
+
+}
+
+.navigator > a:before{
+     content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+
+}
+
+.navigator > a:hover:before{
+     visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+    
+footer{
+    position: fixed;
+    bottom: 0;
+    padding:0;
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(#0e9c82, #0e999c);
+    
+}
+
+footer .foot h2{
+    padding: 30px;
+    margin: 0;
+    color: green
+}
+.button {
+  font-size: 1em;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 30px;
+  background-image: linear-gradient(#11bf9f, #14c6c9);
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: all 0.3s ease-out
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: visible;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+
+}
+
+
+
+
+</style>
+<body bgcolor="#e4f0e4">
+    <nav>
+<table width="100%">
+  <tr>
+      <td width="30%" style="" align="left"><div class="navigator">
+        <a href="herbal.html"><img src="titleemilysgarden.png" height="80" width="320" style="line-height: 20px;background-color: transparent; padding: 0; margin-top: 10px" class="button"></a></div>
+      <td width="40%" align="center"><h1 style= "text-shadow: 1px 0 black;color: white; ">Select Payment Method</h1></td>
+      <td width="30%" align="right"><a href="home.html"style= "text-shadow: 1px 0 black;color: white; "><h3 style="margin-right: 30px">Go back to home</h3></a>
+     </div></td>
+    </tr>
+  </table>
+</nav><br><br><br><br>
+<nav >
+<div class="navigator">
+
+		<td align="center" style="align-content: center; ">
+			<a href="" id="black" style="background-color: #248c7a"><h3>Credit/Debit</h3></a> 
+			<a href="" id="black" style="background-color: #248c7a "><h3>Cash-on-Delivery</h3></a>
+	
+</nav>
+<footer style=" width: 100%; position: absolute; bottom: 0">
+  <div class="footer" style="height: 35px; background-image: linear-gradient(#0e9c82, #0e999c);">
+    
+  </div>
+</footer>
+</body>
+</html>

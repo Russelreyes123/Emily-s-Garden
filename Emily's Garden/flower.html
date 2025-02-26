@@ -1,0 +1,427 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+        <title>Flower Plants | Emily's Garden</title>
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+<style>
+
+
+    body{
+    background-size:cover;
+    background-position: center;
+    padding: 0;
+    margin: 0 auto;
+    font-family: bell mt;
+    text-align: center;
+    color: #fff;
+
+
+    
+}
+
+#price{
+  color: #ba8522
+}
+#black{
+  color: black
+}
+
+
+#td{
+  background-color: white;
+}
+
+h1{
+    opacity: .8;
+    padding: 30px;
+    margin: 0;
+    font-size: 50px
+    
+    
+}
+
+h4{
+    font-size: 40px;
+}
+
+nav{
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #13d1ae, #0e999c);
+    padding: 10px;
+}
+nav a.active{
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    background-color: #12a186;
+    border-radius: 10px
+}
+
+.navigator{
+  font-family: comic sans ms;
+    
+}
+
+.navigator a{
+    position: relative;
+    font-size: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+
+}
+
+.navigator a:hover{
+    position: relative;
+
+
+}
+
+.navigator > a:before{
+     content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+
+}
+
+.navigator > a:hover:before{
+     visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+    
+footer{
+    position: fixed;
+    bottom: 0;
+    padding:0;
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(#0e9c82, #0e999c);
+    
+}
+
+footer .foot h2{
+    padding: 30px;
+    margin: 0;
+    color: green
+}
+.button {
+  font-size: 1em;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 30px;
+  background-image: linear-gradient(#11bf9f, #14c6c9);
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: all 0.3s ease-out
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: visible;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+
+}
+
+
+
+</style>
+<body bgcolor="#e4f0e4">
+    
+
+    <nav>
+    <div class="navigator">
+<div class="search-container" style="position: fixed; margin-left: 1250px">
+          <form action="walangpatutunguhan.html">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="material icons"> Search</i></button>
+          </form>
+        </div>
+        <a  href="home.html"><img src="titleemilysgarden.png"height="48" width="192"></a>
+        <a href="herbal.html" id="black">Herbal</a>
+        <a href="fruitbearing.html" id="black">Fruit Bearing</a>
+        <a href="flower.html" class="active" id="black">Flower</a>
+        <a href="gardening.html" id="black">Gardening</a>
+        <a href="tools.html" id="black">Tools</a>
+
+        <a href="cart.html" id="black" style="background-color: #8ce68e; border-radius: 5px">View cart<img src="cart.png" width="18" height="16.6"></a>
+        <a href="wishlist.html" id="black" style="background-color: #8ce68e; border-radius: 5px">View wishlist</a>
+       <a href="about.html" style="color: #096637">About</a>
+    </div>
+    </nav>
+  <table width="1350" height="400" border="0" align="center" style="border-spacing: 5px; background-color: " >
+    <tr>
+      <td colspan="5" height="50" width="1350" id="td"><h2 style="color: #143835; margin-left: 20px;">Flower Plants</h2></td>
+    </tr>
+    <tr id="td">
+      <td height="250" width="270">
+        <div class="box" style="text-align: center;">
+          <a class="button" href="#popup1"><img src="gladiolus.png" height="250" width="265"><h3 id="black"> Gladiolus</h3><h3 id="price">₱375.00</h3></a>
+        </div>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="gladiolus.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td> 
+              <td id="black">
+                <h2 >Gladiolus</h2>
+                <p>Scientific name: Gladiolus</p>
+                
+                <p>An ancient name for the gladiolus was xiphium, from the Greek word xiphos, also meaning sword. Gladiolus represented the Roman Gladiators, before the African Gladioli became popular in the West. African Gladioli were imported in large quantities to Europe from South Africa during the 18th century.
+                </p>
+                <hr>
+                <h2 style="color: #143835">₱375.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html" style="background-color: #29E185; border-radius: 10px; color: black"> BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+    <td height="250" width="270"><div class="box" style="text-align: center;">
+      <a class="button" href="#popup2"><img src="aster.png" height="250" width="265"><h3 id="black">  Aster</h3><h3 id="price">₱200.00</h3></a>
+      </div>
+
+      <div id="popup2" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="aster.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td id="black">
+              <td>
+                <h2 style="color:#143835 ">Aster</h2>
+                <p>Scientific name: Aster</p>
+                
+                <p>Aster is herbaceous plant that belongs to the family of sunflowers. More than 600 species of plants were known as asters before implementation of modern, molecular methods of analysis. According to the latest classification system, only 180 species of plants are recognized as true asters. They originate from temperate regions of Eurasia.</p>
+                <hr>
+                <h2 style="color: #143835">₱200.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html" style="background-color: #29E185; border-radius: 10px; color: black" > BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+    <td height="250" width="270"><div class="box" style="text-align: center;">
+      <a class="button" href="#popup3"><img src="Chrysanthemum.png" height="250" width="265"><h3 id="black"> Chrysanthemum</h3><h3 id="price">₱260.00</h3></a>
+      </div>
+
+      <div id="popup3" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="Chrysanthemum.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td>
+              <td  id="black">
+                <h2 style="color:#143835 ">Chrysanthemum</h2>
+                <p>Scientific name: Chrysanthemum</p>
+                
+                <p>Chrysanthemums, sometimes called mums or chrysanths, are flowering plants of the genus Chrysanthemum in the family Asteraceae. They are native to Asia and northeastern Europe. </p>
+                <hr>
+                <h2 style="color: #143835">₱260.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html" style="background-color: #29E185; border-radius: 10px; color: black" > BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+    <td height="250" width="270"><div class="box" style="text-align: center;">
+      <a class="button" href="#popup4"><img src="sunflower.png" height="250" width="265"> <h3 id="black">Sunflower</h3><h3 id="price">₱190.00</h3></a>
+      </div>
+
+      <div id="popup4" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="sunflower.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td>
+              <td id="black">
+                <h2 style="color:#143835 ">Sunflower</h2>
+                <p>Scientific name: Helianthus annuus</p>
+                
+                <p>Helianthus annuus, the common sunflower, is a large annual forb of the genus Helianthus grown as a crop for its edible oil and edible fruits.</p>
+                <hr>
+                <h2 style="color: #143835">₱190.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html" style="background-color: #29E185; border-radius: 10px; color: black" > BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr id="td">
+    <td height="250" width="270" ><div class="box" style="text-align: center;">
+      <a class="button" href="#popup5"><img src="redrose.png" height="250" width="265"></style><h3 id="black"> Red Rose</h3><h3 id="price">₱230.00</h3></a>
+      </div>
+
+      <div id="popup5" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="redrose.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td>
+              <td id="black">
+                <h2 style="color:#143835 ">Red Rose</h2>
+                <p>Scientific name: Rosa</p>
+                
+                <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars. </p>
+                <hr>
+                <h2 style="color: #143835">₱230.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html" style="background-color: #29E185; border-radius: 10px; color: black" > BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+    <td height="250" width="270" ><div class="box" style="text-align: center;">
+      <a class="button" href="#popup6"><img src="stargazer.png" height="250" width="265"></style><h3 id="black"> Stargazer</h3><h3 id="price">₱450.00</h3></a>
+      </div>
+
+      <div id="popup6" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <table border="0" style="border-spacing: 10px">
+            <tr>
+              <td>
+                <img src="stargazer.png" height="250" width="265" border="5" style="border-color: #0c6a6b">
+              </td>
+              <td id="black">
+                <h2 style="color:#143835 ">Stargazer</h2>
+                <p>Scientific name: Lilium orientalis</p>
+                
+                <p>Lilium 'Stargazer' is a hybrid lily of the 'Oriental group'. Oriental lilies are known for their fragrant perfume, blooming mid-to-late summer. Stargazers are easy to grow and do best in full sunlight. They have a fast growth rate and should be planted in full sun in well-drained loamy or sandy soil. </p>
+                <hr>
+                <h2 style="color: #143835">₱450.00</h2>
+                <hr>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to wishlist</a>
+                  <a class="button" href="#popup101" style="background-color: #227d7b; border-radius: 10px; color: white" > Add to cart</a>
+                  <a class="button" href="Checkout-Form.html " style="background-color: #29E185; border-radius: 10px; color: black" > BUY NOW!</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
